@@ -1,0 +1,28 @@
+.aboutInfo {
+    position: relative;
+    transform: translateY(-35%);
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+	text-align: center;
+    top: 20px;
+
+	h2 {
+		margin: 8px 0;
+	}
+
+	h1 {
+		margin-bottom: 24px;
+	}
+}
+
+.socials {
+    width: 100%;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.socials button:not(:first-child) {
+    margin-left: 16px;
+}

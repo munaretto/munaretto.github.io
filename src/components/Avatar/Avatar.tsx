@@ -1,5 +1,4 @@
 import styled from "styled-components";
-import styles from "./Avatar.module.css";
 
 export interface IAvatarProps {
 	src: string;
@@ -16,6 +15,6 @@ const AvatarImg = styled.img`
 	box-shadow: 8px 11px 31px -19px rgba(0, 0, 0, 0.75);
 `;
 
-export default function LanguageSelector({ src, alt }: IAvatarProps) {
-	return <AvatarImg className={styles.avatar} src={src} alt={alt ?? ""} />;
+export default function Avatar({ src, alt }: IAvatarProps) {
+	return <AvatarImg src={src} alt={alt ?? ""} />;
 }

@@ -1,0 +1,8 @@
+export const DARK_THEME = {
+    BACKGROUND: '#23262E',
+    TEXT: '#FFFFFF',
+    PRIMARY: '#353946',
+    SECONDARY: '#FFFFFF',
+    TERTIARY: '#FFD6BA',
+    COLORED_BUTTON_TEXT: '#23262E'
+}
