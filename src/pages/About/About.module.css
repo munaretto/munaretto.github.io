@@ -1,28 +1,28 @@
 .aboutInfo {
-    position: relative;
-    transform: translateY(-35%);
-    display: flex;
-    flex-flow: column;
-    align-items: center;
+	position: relative;
+	transform: translateY(-35%);
+	display: flex;
+	flex-flow: column;
+	align-items: center;
 	text-align: center;
-    top: 20px;
+	top: 20px;
+}
 
-	h2 {
-		margin: 2vh 0;
-	}
+h2 {
+	margin: 2vh 0 !important;
+}
 
-	h1 {
-		margin-bottom: 3vh;
-	}
+h1 {
+	margin-bottom: 3vh !important;
 }
 
 .socials {
-    width: 100%;
+	width: 100%;
 	display: flex;
 	align-items: center;
 	justify-content: center;
 }
 
 .socials button:not(:first-child) {
-    margin-left: 16px;
+	margin-left: 16px;
 }
