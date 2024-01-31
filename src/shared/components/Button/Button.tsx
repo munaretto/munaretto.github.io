@@ -1,9 +1,9 @@
 import styled from "styled-components";
-import { IButtonStyling, IButtonProps } from "../../interfaces/IButton";
 import { FONT_WEIGHTS } from "../../../themes/fonts";
 import { Theme } from "../../../types/theme";
+import { ButtonProps, ButtonStylingProps } from "../../../types/button";
 
-const AppButton = styled.button<IButtonStyling & Theme>`
+const AppButton = styled.button<ButtonStylingProps & Theme>`
 	border-radius: 50px;
 	cursor: ${(props) => props.cursor ?? "pointer"};
 
@@ -20,7 +20,7 @@ export default function Button({
 	radius,
 	cursor,
 	theme
-}: IButtonProps & IButtonStyling & Theme) {
+}: ButtonProps & ButtonStylingProps & Theme) {
 	return (
 		<AppButton
 			{...{ radius, cursor, theme }}

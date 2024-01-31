@@ -10,6 +10,17 @@ type ThemeSelectorProps = {
 	children?: ReactNode;
 };
 
+const ChangeThemeIcon = styled.svg<{ theme?: Theme }>`
+	fill: white;
+	width: 24px;
+	height: 24px;
+	cursor: pointer;
+
+	&:hover {
+		fill: ${(props) => props.theme.TERTIARY ?? "inherit"};
+	}
+`;
+
 export default function ThemeSelector({ children }: ThemeSelectorProps) {
 	const { theme, changeTheme } = useContext(ThemeContext) as ThemeContextType;
 	const handleThemeToggle = () => {
@@ -25,17 +36,6 @@ export default function ThemeSelector({ children }: ThemeSelectorProps) {
 		 */
 		changeTheme(theme === LIGHT_THEME ? DARK_THEME : LIGHT_THEME);
 	};
-
-	const ChangeThemeIcon = styled.svg<{theme?: Theme}>`
-		fill: white;
-		width: 24px;
-		height: 24px;
-		cursor: pointer;
-
-		&:hover {
-			fill: ${props => props.theme.TERTIARY ?? 'inherit'}
-		}
-	`;
 
 	return (
 		<section>

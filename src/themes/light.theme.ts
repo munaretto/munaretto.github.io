@@ -4,5 +4,6 @@ export const LIGHT_THEME = {
     PRIMARY: '#BEE3DB',
     SECONDARY: '#89B0AE',
     TERTIARY: '#FFD6BA',
+    BORDER: '#ECE9E9',
     COLORED_BUTTON_TEXT: '#FFFFFF'
 }

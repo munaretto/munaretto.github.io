@@ -8,6 +8,7 @@ export default function App() {
 		<ThemeProvider>
 			<Header />
 			<About />
+			<Projects />
 		</ThemeProvider>
 	);
 }

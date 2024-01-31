@@ -1,0 +1,22 @@
+.imageWrapper {
+    height: 120px;
+    background-color: beige;
+    /* padding: 0 !important; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 5px 5px 0px 0px;
+}
+
+.contentWrapper {
+    padding: 16px;
+}
+
+.infoWrapper {
+    
+}
+
+.techWrapper {
+    
+}
+

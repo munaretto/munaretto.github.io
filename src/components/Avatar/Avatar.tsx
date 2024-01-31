@@ -4,7 +4,6 @@ import { useContext } from "react";
 import { DARK_THEME } from "../../themes/dark.theme";
 import { ThemeContext } from "../../contexts/ThemeContext";
 
-
 export interface IAvatarProps {
 	src: string;
 	alt?: string;
