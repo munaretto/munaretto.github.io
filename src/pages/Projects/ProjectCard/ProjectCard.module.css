@@ -1,6 +1,6 @@
 .imageWrapper {
     height: 120px;
-    background-color: beige;
+    background-color: lightgray;
     /* padding: 0 !important; */
     display: flex;
     align-items: center;
@@ -17,6 +17,8 @@
 }
 
 .techWrapper {
-    
+    display: flex;
+    gap: 0 8px;
+    margin-top: 16px;
 }
 

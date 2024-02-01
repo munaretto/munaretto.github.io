@@ -1,21 +1,21 @@
 import { ReactNode, createContext, useState } from "react";
 import { Theme, ThemeContextType } from "../types/theme";
-import { LIGHT_THEME } from "../themes/light.theme";
 import styled from "styled-components";
+import { DARK_THEME } from "../themes/dark.theme";
 
 type ThemeContextProps = {
 	children?: ReactNode;
 };
 
 const AppWrapper = styled.section<{theme: Theme}>`
-	height: 125vh;
+	height: 100vh;
 	background-color: ${props => props.theme.BACKGROUND};
 `;
 
 export const ThemeContext = createContext<ThemeContextType | null>(null);
 
 export default function ThemeProvider({ children }: ThemeContextProps) {
-	const [themeMode, setThemeMode] = useState<Theme>(LIGHT_THEME);
+	const [themeMode, setThemeMode] = useState<Theme>(DARK_THEME);
 
 	return (
 		<ThemeContext.Provider

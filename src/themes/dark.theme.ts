@@ -4,6 +4,6 @@ export const DARK_THEME = {
     PRIMARY: '#353946',
     SECONDARY: '#FFFFFF',
     TERTIARY: '#FFD6BA',
-    BORDER: '#ECE9E9',
+    BORDER: '#353946',
     COLORED_BUTTON_TEXT: '#23262E'
 }

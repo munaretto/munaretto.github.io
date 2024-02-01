@@ -7,6 +7,7 @@ import styles from "./ProjectCard.module.css";
 import { Text } from "./../../../shared/components/Text/Text";
 import { FONT_SIZES, FONT_WEIGHTS } from "../../../themes/fonts";
 import { H3Title } from "../../../shared/components/H3Title/H3Title";
+import { Tag } from "../../../shared/components/Tag/Tag";
 
 type ProjectCardProps = {
 	children?: ReactNode;
@@ -21,9 +22,11 @@ const CardWrapper = styled.section<{ theme: Theme }>`
 	-webkit-box-shadow: 13px 11px 27px -32px rgba(0, 0, 0, 0.75);
 	-moz-box-shadow: 13px 11px 27px -32px rgba(0, 0, 0, 0.75);
 	box-shadow: 13px 11px 27px -32px rgba(0, 0, 0, 0.75);
+	width: 60vw;
+	max-width: 220px;
 `;
 
-export default function ProjectCard({ children, project }: ProjectCardProps) {
+export default function ProjectCard({ project }: ProjectCardProps) {
 	const { theme } = useContext(ThemeContext) as Theme;
 	return (
 		<CardWrapper theme={theme}>
@@ -43,7 +46,7 @@ export default function ProjectCard({ children, project }: ProjectCardProps) {
 
 				<section className={styles.techWrapper}>
 					{project.technologies?.map((tech) => {
-						return <span>{tech}</span>;
+						return <Tag theme={theme}>{tech}</Tag>;
 					})}
 				</section>
 			</section>
